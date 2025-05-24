@@ -24,11 +24,11 @@ const projects = [
     id: 3,
     title: "Personal Protfolio",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "A personal portfolio website showcasing my skills, projects, and experience.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe", "MongoDB", "TailwindCSS", "TypeScript"],
+    tags: ["React", "Node.js", "Stripe", "TailwindCSS", "TypeScript"],
     demoUrl: "https://www.youtube.com/watch?v=ifOJ0R5UQOc&ab_channel=PedroTech",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AbdelrhmanalSharif/Protfolio_React",
   },
 ];
 
@@ -100,7 +100,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/AbdelrhmanalSharif"
           >
             Check My Github <ArrowRight size={16} />
           </a>
