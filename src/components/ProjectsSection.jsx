@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Event Software Page",
     description: "A full project software for web and mobile.",
-    image: "/projects/project1.png",
+    image: "/Protfolio_React/public/projects/project1.png",
     tags: ["React", "TailwindCSS", "TypeScript", "Flutter", "Next.js", "Vite", "JavaScript", "SQL"],
     demoUrl: "https://www.figma.com/design/QGywtGN9Eao5brhG3YBGAc/Eventure_UI?node-id=36-440&t=obC3lxxaN8XVuLf9-1",
     githubUrl: "https://github.com/Youshida90/Eventure_app",
@@ -15,7 +15,7 @@ const projects = [
     title: "Crypto Analytics Dashboard",
     description:
       "Interactive dashboard for visualizing cryptocurrency data with real-time updates.",
-    image: "/projects/project2.png",
+    image: "/Protfolio_React/public/projects/project2.png",
     tags: ["Flutter", "Supabase", "Dart", "Figma"],
     demoUrl: "https://www.figma.com/design/sdbwJrBREpqqUToZTo0Lg6/Free-Crypto-App-UI-Kit--Community-?node-id=810-4800&t=wwii0414m5CmnFSF-1",
     githubUrl: "https://github.com/Youshida90/Blockto",
@@ -25,7 +25,7 @@ const projects = [
     title: "Personal Protfolio",
     description:
       "A personal portfolio website showcasing my skills, projects, and experience.",
-    image: "/projects/project3.png",
+    image: "/Protfolio_React/public/projects/project3.png",
     tags: ["React", "Node.js", "Stripe", "TailwindCSS", "TypeScript"],
     demoUrl: "https://www.youtube.com/watch?v=ifOJ0R5UQOc&ab_channel=PedroTech",
     githubUrl: "https://github.com/AbdelrhmanalSharif/Protfolio_React",
