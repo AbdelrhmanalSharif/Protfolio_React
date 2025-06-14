@@ -1,6 +1,8 @@
 import { ArrowUp } from "lucide-react";
 
-export const Footer = () => {
+export const Footer = (
+  { scrollFix } // Assuming scrollFix is a function passed as a prop for smooth scrolling
+) => {
   return (
     <footer className="py-12 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-wrap justify-between items-center">
       {" "}
@@ -8,12 +10,12 @@ export const Footer = () => {
         {" "}
         &copy; {new Date().getFullYear()} All rights reserved.
       </p>
-      <a
-        href="#hero"
+      <button
+         onClick={() => scrollFix("hero")}
         className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
       >
         <ArrowUp size={20} />
-      </a>
+      </button>
     </footer>
   );
 };

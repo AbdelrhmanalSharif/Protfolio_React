@@ -32,7 +32,7 @@ export const Home = () => {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer scrollFix= {scrollFix}/>
     </div>
   );
 };
