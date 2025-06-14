@@ -3,14 +3,16 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "hero" },
+  { name: "About", href: "about" },
+  { name: "Skills", href: "skills" },
+  { name: "Projects", href: "projects" },
+  { name: "Contact", href: "contact" },
 ];
 
-export const Navbar = () => {
+export const Navbar = (
+  {scrollFix} // Assuming scrollFix is a function passed as a prop for smooth scrolling
+) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,26 +32,26 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a
+        <button
+        onClick={() => scrollFix("hero")}
           className="text-xl font-bold text-primary flex items-center"
-          href="#hero"
         >
           <span className="relative z-10">
             <span className="text-glow text-foreground"> FireCore </span>{" "}
             Portfolio
           </span>
-        </a>
+        </button>
 
         {/* desktop nav */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
-            <a
+            <button
               key={key}
-              href={item.href}
+               onClick={() => scrollFix(item.href)}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {item.name}
-            </a>
+            </button>
           ))}
         </div>
 
@@ -74,14 +76,16 @@ export const Navbar = () => {
         >
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (
-              <a
+              <button
                 key={key}
-                href={item.href}
+                
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {setIsMenuOpen(false);
+  scrollFix(item.href);
+                }}
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </div>
         </div>

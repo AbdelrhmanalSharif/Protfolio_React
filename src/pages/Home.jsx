@@ -9,6 +9,10 @@ import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 
 export const Home = () => {
+    function scrollFix(id){
+    const targetEvent = document.getElementById(`${id}`);
+    targetEvent?.scrollIntoView({ behavior: "smooth" })
+  }
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Theme Toggle */}
@@ -17,10 +21,10 @@ export const Home = () => {
       <StarBackground />
 
       {/* Navbar */}
-      <Navbar />
+      <Navbar scrollFix = {scrollFix} />
       {/* Main Content */}
       <main>
-        <HeroSection />
+        <HeroSection scrollFix = {scrollFix} />
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />

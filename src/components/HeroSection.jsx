@@ -1,8 +1,9 @@
 import { ArrowDown } from "lucide-react";
-import { Link } from "react-router-dom";
 
-
-export const HeroSection = () => {
+export const HeroSection = (
+  { scrollFix } // Assuming scrollFix is a function passed as a prop for smooth scrolling
+) => {
+  
   return (
     <section
       id="hero"
@@ -30,9 +31,9 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <Link to="/projects" className="cosmic-button">
-  View My Work
-</Link>
+            <button onClick={() => scrollFix("projects")} className="cosmic-button">
+              View My Work
+            </button>
           </div>
         </div>
       </div>
