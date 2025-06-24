@@ -30,6 +30,16 @@ image: "/Protfolio_React/projects/project1.png",
     demoUrl: "https://www.youtube.com/watch?v=ifOJ0R5UQOc&ab_channel=PedroTech",
     githubUrl: "https://github.com/AbdelrhmanalSharif/Protfolio_React",
   },
+  {
+    id: 4,
+    title: "E-commerce App",
+    description:
+      "A fully functional e-commerce application with product listings, cart, and checkout.",
+    image: "/Protfolio_React/projects/project4.png",
+    tags: ["React", "Javascript", "TailwindCSS"],
+    demoUrl: "https://www.youtube.com/watch?v=ifOJ0R5UQOc&ab_channel=PedroTech",
+    githubUrl: "https://github.com/AbdelrhmanalSharif/Expense-Tracker-Website",
+  }
 ];
 
 export const ProjectsSection = () => {
